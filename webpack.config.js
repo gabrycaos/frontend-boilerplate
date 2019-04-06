@@ -79,11 +79,25 @@ module.exports = {
         ]
       },
       {
+        // ASSET LOADER
+        test: /\.(woff|woff2|ttf|eot)$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader'
         ]
-      }
+      },
+      {
+        test: /\.(html)$/,
+        use: {
+            loader: 'html-loader',
+            options: {
+                attrs: ['img:src', 'link:href']
+            }
+        }
+    }
     ]
   },
 
