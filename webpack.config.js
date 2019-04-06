@@ -31,77 +31,83 @@ module.exports = {
     compress: true,
     port: 9000
   },
-	module: {
-		rules: [
-			{
-				include: [path.resolve(__dirname, 'src')],
-				loader: 'babel-loader',
+  module: {
+    rules: [
+      {
+        include: [path.resolve(__dirname, 'src')],
+        loader: 'babel-loader',
 
-				options: {
-					plugins: ['syntax-dynamic-import'],
+        options: {
+          plugins: ['syntax-dynamic-import'],
 
-					presets: [
-						[
-							'@babel/preset-env',
-							{
-								modules: false
-							}
-						]
-					]
-				},
+          presets: [
+            [
+              '@babel/preset-env',
+              {
+                modules: false
+              }
+            ]
+          ]
+        },
 
-				test: /\.js$/
-			},
-			{
-				test: /\.(scss|css)$/,
+        test: /\.js$/
+      },
+      {
+        test: /\.(scss|css)$/,
 
-				use: [
-					{
+        use: [
+          {
             loader: 'style-loader',
             options: {
               sourceMap: true
             }
-					},
-					{
+          },
+          {
             loader: 'css-loader',
             options: {
               sourceMap: true
             }
-					},
-					{
+          },
+          {
             loader: 'sass-loader',
             options: {
               outputStyle: 'expanded',
               sourceMap: true,
               sourceMapContents: true
             }
-					}
-				]
-			}
-		]
-	},
+          }
+        ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          'file-loader'
+        ]
+      }
+    ]
+  },
 
-	output: {
-		chunkFilename: '[name].[chunkhash].js',
-		filename: '[name].[chunkhash].js'
-	},
+  output: {
+    chunkFilename: '[name].[chunkhash].js',
+    filename: '[name].[chunkhash].js'
+  },
 
-	mode: 'development',
+  mode: 'development',
 
-	optimization: {
-		splitChunks: {
-			cacheGroups: {
-				vendors: {
-					priority: -10,
-					test: /[\\/]node_modules[\\/]/
-				}
-			},
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          priority: -10,
+          test: /[\\/]node_modules[\\/]/
+        }
+      },
 
-			chunks: 'async',
-			minChunks: 1,
-			minSize: 30000,
-			name: true
-		}
+      chunks: 'async',
+      minChunks: 1,
+      minSize: 30000,
+      name: true
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
