@@ -11,6 +11,7 @@ Just another webpack/babel boilerplate for frontend development
   - [ESLint](https://eslint.org/docs/user-guide/getting-started) (v5.16.0) (with [AirBnB](https://github.com/airbnb/javascript) config)
   - [SASS](https://sass-lang.com/guide)
   - [Jest](https://jestjs.io/docs/en/getting-started) (24.7.1) with code coverage reports
+  - [Prettier](https://prettier.io/docs/en/install.html) (1.17.0)
 
 ## Usage
 
