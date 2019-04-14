@@ -1,6 +1,6 @@
 {
   "name": "fronted-boilerplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Just another webpack/babel boilerplate",
   "main": "index.js",
   "scripts": {
