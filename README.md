@@ -4,14 +4,14 @@ Just another webpack/babel boilerplate for frontend development
 
 ## Features
 
-  - [Webpack](https://webpack.js.org/concepts) (v4.29.6)
-    - [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) (v3.2.1)
-  - [ES6](https://www.ecma-international.org/ecma-262/6.0/)
-  - [Babel](https://babeljs.io/docs/en/) (v7.4.0)
-  - [ESLint](https://eslint.org/docs/user-guide/getting-started) (v5.16.0) (with [AirBnB](https://github.com/airbnb/javascript) config)
-  - [SASS](https://sass-lang.com/guide)
-  - [Jest](https://jestjs.io/docs/en/getting-started) (24.7.1) with code coverage reports
-  - [Prettier](https://prettier.io/docs/en/install.html) (1.17.0)
+- [Webpack](https://webpack.js.org/concepts) (v4.41.2)
+  - [Webpack Dev Server](https://github.com/webpack/webpack-dev-server) (v3.9.0)
+- [ES6](https://www.ecma-international.org/ecma-262/6.0/)
+- [Babel](https://babeljs.io/docs/en/) (v7.7.5)
+- [ESLint](https://eslint.org/docs/user-guide/getting-started) (v6.7.2) (with [AirBnB](https://github.com/airbnb/javascript) config)
+- [SASS](https://sass-lang.com/guide)
+- [Jest](https://jestjs.io/docs/en/getting-started) (24.9.0) with code coverage reports
+- [Prettier](https://prettier.io/docs/en/install.html) (1.19.1)
 
 ## Usage
 
