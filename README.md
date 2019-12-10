@@ -46,4 +46,3 @@ For testing in watch mode, you have to type
 `npm run test-watch`
 
 After run `npm run test` you have a table in your terminal with a brief coverage report of your tests, and in the root of the project will be created a `coverage` directory with some coverage reports and file useful for your static code quality tools (e.g [SonarQube](https://www.sonarqube.org/))
-
