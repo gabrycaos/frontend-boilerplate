@@ -58,9 +58,6 @@ module.exports = {
         use: [
           {
             loader: 'style-loader',
-            options: {
-              sourceMap: true
-            }
           },
           {
             loader: 'css-loader',
@@ -71,9 +68,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              outputStyle: 'expanded',
               sourceMap: true,
-              sourceMapContents: true
             }
           }
         ]
@@ -86,7 +81,12 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+            },
+          },
         ]
       },
       {
